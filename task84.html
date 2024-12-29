@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "";
+for (i=0;i<5;i++) {
+    for(k=1;k<=4-i;k++){
+        str+=" "
+    }
+  num = 1; 
+  for (j=0;j<=i;j++) {
+    str+=" "+num; 
+    num=num*(i - j)/(j + 1); 
+  }
+  str += "\n"; 
+}
+
+console.log(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doccment</title>
+</head>
+
+<body>
+    <script>
+        var str = ""
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5 - i + 1; j++) {
+                str += j + " ";
+            }
+
+            for (k = 1; k < 2 * (i - 1) + 1; k++) {
+                str += " ";
+            }
+
+
+            for (j = 4; j >= 1; j--) {
+                if (j <= 5 - i + 1) {
+                    str += j + " ";
+                }
+
+
+            }
+
+
+            str += "\n";
+        }
+
+
+        console.log(str);
+
+        // op:
+        // 1 2 3 4 5 4 3 2 1
+        // 1 2 3 4   4 3 2 1
+        // 1 2 3     3 2 1
+        // 1 2       2 1
+        // 1         1
+
+
+
+    </script>
+</body>
+
+</html>

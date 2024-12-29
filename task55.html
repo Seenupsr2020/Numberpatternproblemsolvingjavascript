@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document55</title>
+</head>
+<body>
+    <script>
+        var str=""
+       for(i=1;i<=5;i++){
+        if (i==5) {
+                for(k=1;k<=5;k++){
+                       str+=k;
+                       if(k==5){
+                        for(s=4;s>=1;s--){
+                            str+=s;
+                        }
+                        
+                       }
+                       
+                }
+            }
+             
+            else{
+                for(j=1;j<=i;j++){
+                str+=j;
+               
+                if(j==i){
+                    for(n=1;n<=9-i*2;n++){
+                     str+=" "
+                     }
+                    for(p=i;p>=1;p--){
+                        str+=p;
+                        }
+                    
+                }
+                
+               
+               }
+            }
+        
+            str+="\n"
+       }
+      console.log(str)
+    </script>
+</body>
+</html>

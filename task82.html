@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = ""
+        for (i = 5; i >= 1; i--) {
+            if (i == 5) {
+                for (k = 1; k <= 5; k++) {
+                    str += k;
+                    if (k == 5) {
+                        for (s = 6; s <= 9; s++) {
+                            str += s;
+                        }
+
+                    }
+
+                }
+            }
+            else {
+                for (j = 1; j <= i; j++) {
+                    str += j;
+                    if (j == i) {
+                        for (n = 1; n <= 9 - i * 2; n++) {
+                            str += " "
+                        }
+                        for (k = 10 - i; k < 10; k++) {
+                            str += k;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            str += "\n"
+        }
+        console.log(str)
+
+        //op
+        // 123456789
+        // 1234 6789
+        // 123   789
+        // 12     89
+        // 1       9
+    </script>
+</body>
+
+</html>
